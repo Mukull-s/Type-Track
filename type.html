@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="type.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1>Type Track</h1>
+
+    <div class="text-display-area">
+      <p class="text"> The para here </p>
+    </div>
+
+    <div class="type-area">
+      <input type="text" class="userinput" placeholder="Start Writing from here">
+    </div>
+
+    <div>
+      <label for="testDuration">Choose Test Duration: </label>
+      <select id="testDuration">
+        <option value="1">1 min</option>
+        <option value="2">2 min</option>
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+      </select>
+    </div>
+
+    <button class="resetbtn">Reset</button>
+
+
+    <div class="metrics">
+      <div class="wpm">WPM: <span id="wpm">0</span></div>
+      <div class="accuracy">Accuracy: <span id="accuracy">100%</span></div>
+      <div class="timer">Time Left: <span id="timeLeft">60</span> seconds</div>
+    </div>
+    
+
+
+</div>
+<script src="type.js"></script>
+</body>
+
+</html>
